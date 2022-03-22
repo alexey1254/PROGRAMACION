@@ -3,6 +3,14 @@ package tema05;
 public class Persona implements Cloneable {
 	private String nombre, apellidos;
 	private int edad;
+	/**
+	* Constructor de copia
+	*/
+	public Persona(Persona p) {
+	this.nombre=p.nombre;
+	this.apellidos=p.apellidos;
+	this.edad=p.edad;
+	}
 	
 	public Persona(String nombre, String apellidos, int edad) {
 	this.nombre=nombre;
