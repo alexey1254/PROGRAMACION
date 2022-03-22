@@ -1,6 +1,6 @@
 package tema05;
 
-public class Persona {
+public class Persona implements Cloneable {
 	private String nombre, apellidos;
 	private int edad;
 	
@@ -27,5 +27,10 @@ public class Persona {
 	@Override
 	public String toString() {
 		return String.format("Nombre: %s, Apellidos: %s, Edad: %d, IdObjeto: %s.", this.nombre, this.apellidos, this.edad, super.toString());	
+	}
+	
+	@Override
+	public Persona clone() throws CloneNotSupportedException {
+	return (Persona)super.clone();	
 	}
 }
