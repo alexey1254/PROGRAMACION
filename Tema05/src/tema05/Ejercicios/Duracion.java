@@ -31,7 +31,7 @@ public class Duracion {
         int hor = segundos / 3600;
         int min = (segundos - hor * 3600) / 60;
         int seg = (segundos - hor * 3600 - min * 60); 
-        return new Duracion (hor, min, segundos);
+        return new Duracion (hor, min, seg);
     }
 
     /**
