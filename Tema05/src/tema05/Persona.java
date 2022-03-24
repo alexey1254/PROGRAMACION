@@ -42,3 +42,4 @@ public class Persona implements Cloneable {
 	return (Persona)super.clone();	
 	}
 }
+
