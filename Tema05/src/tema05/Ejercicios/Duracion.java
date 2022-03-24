@@ -6,7 +6,7 @@ package tema05.Ejercicios;
 public class Duracion {
     private int horas, minutos, segundos;
 
-    
+
 
     public Duracion(int horas, int minutos, int segundos) {
         this.horas = horas;
@@ -57,17 +57,36 @@ public class Duracion {
         return this.resta(Duracion.horasMin(s));
     }
 
+    /**
+     * Se suman dos objetos de esta clase
+     * @param d Objeto 
+     * @return
+     * @throws Exception
+     */
     public Duracion suma(Duracion d) throws Exception {
         return new Duracion(this.resta(-d.seg()));
     }
 
-
+    /**
+     * Se suma con los segundos pasados
+     * @param seg Segundos
+     * @return La suma del objeto sumandole los segundos
+     * @throws Exception
+     */
+    public Duracion suma(int seg) throws Exception {
+        return this.suma(Duracion.horasMin(segundos));
+    }
 
     /**
      * ToString
      */
     @Override
     public String toString() {
-        return String.format("%d:%d:%d", ths.horas, this.minutos, this.segundos);
+        return String.format("%02d:%02d:%02d", ths.horas, this.minutos, this.segundos);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.horas == ((Duracion) obj).seg();
     }
 }
