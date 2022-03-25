@@ -118,6 +118,5 @@ public class UtilidadesString {
     public static void main(String[] args) {
         String p = "reconocer";
         System.out.println(palindromo(p));
-        
     }
 }
