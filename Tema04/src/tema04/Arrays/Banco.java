@@ -1,5 +1,5 @@
 
-package Tema04.Arrays;
+package tema04.Arrays;
 import java.util.*;
 
 /**

@@ -1,4 +1,4 @@
-package Tema04.AgoritmosOrdenacion;
+package tema04.AgoritmosOrdenacion;
 
 /**
  *

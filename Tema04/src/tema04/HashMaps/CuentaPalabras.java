@@ -1,4 +1,4 @@
-package Tema04.HashMaps;
+package tema04.HashMaps;
 
 import java.io.File;
 import java.io.FileNotFoundException;
