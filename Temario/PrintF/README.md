@@ -44,8 +44,40 @@ Las marcas en la cadena de formato deben tener la siguiente estructura (los camp
 | + | Imprimir el signo de un número |
 | - | Justifica el campo a la izquierda (por defecto ya hemos dicho que se justifica a la derecha) |
 | # | Formato alternativo. Para reales se dejan ceros al final y se imprime siempre la coma. Para números que no están en base 10, se añade un prefijo denotando la base. |
-| 
 
+| Width | Descripcion |
+|---|---|
+| Numero | Tamaño del ancho del campo donde se imprimirá el valor. |
+| * | Igual que el caso anterior, pero el número a utilizar se pasa como parámetro justo antes del valor. Por ejemplo printf("%*d", 5, 10) imprime el número 10, pero con un ancho de cinco dígitos (es decir, rellenará con 3 espacios en blanco a la izquierda). |
 
+| Precision | Descripcion |
+|---|---|
+| Numero | Tamaño de la parte decimal para números reales. Número de caracteres a imprimir para cadenas de texto |
+| * | Igual que el caso anterior, pero el número a utilizar se pasa como parámetro justo antes del valor. Por ejemplo printf("%.*s", 3, "abcdef") imprime “abc”. |
+
+| Length | Descripcion |
+|---|---|
+| hh | Convertir variable de tipo char a entero e imprimir |
+| h | Convertir variable de tipo short a entero e imprimir |
+| l | Para enteros, se espera una variable de tipo long |
+| ll | Para enteros, se espera una variable de tipo long long |
+| L | Para reales, se eespera una variable de tipo long double |
+| z | Para enterso, se espera un argumento de tipo size_t |
+
+| Type | Descripcion |
+|---|---|
+| %c | Imprime el caracter ASCII correspondiente |
+| %d, %i | Conversion a decimal con signo de un entero |
+| %x, %X | Conversion hexadecimal sin signo |
+| %p | Direccion de memoria (puntero) |
+| %e, %E | Conversiona  coma flotante con signo en notacion cientifica |
+| %f, %F | Conversion a coma flotante con signo, usando punto decimal |
+| %g, %G | Conversion a coma flotante, usando la notacion que requiera menor espacio |
+| %o | Conversion octal sin signo de un entero |
+| %u | Conversion decimal sin signo de un entero |
+| %s | Cadena de caracteres (terminada en '\0') | 
+| %% | Imprime el simbolo % |
+
+#### Acuerdate de poner ``` \n ``` al final de la cadena para que lo imprima con salto de linea
 
 
