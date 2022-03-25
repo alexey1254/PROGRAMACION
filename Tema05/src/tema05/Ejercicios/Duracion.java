@@ -1,6 +1,7 @@
 package tema05.Ejercicios;
 
 /**
+ * Clase duracion
  * @author Alejandro Marrero
  */
 public class Duracion {
@@ -8,10 +9,22 @@ public class Duracion {
 
 
 
+    /**
+     * Constructor con parametros
+     * @param horas del dia
+     * @param minutos del dia
+     * @param segundos del dia
+     */
     public Duracion(int horas, int minutos, int segundos) {
         this.horas = horas;
         this.minutos = minutos;
         this.segundos = segundos;
+    }
+
+    /**
+     * Constructor sin parametros 
+     */
+    public Duracion() {
     }
 
     /**
@@ -62,6 +75,7 @@ public class Duracion {
      * @param d Objeto 
      * @return
      * @throws Exception
+     * ! Hay que corregir el metodo!!
      */
     public Duracion suma(Duracion d) throws Exception {
         return new Duracion(this.resta(-d.seg()));
