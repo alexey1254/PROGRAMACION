@@ -1,10 +1,17 @@
 package tema04.AgoritmosOrdenacion;
 
-public class AlgoritmoOrdenacion {
-    public AlgoritmoOrdenacion() {
-
-    }
-
+/**
+ * Algoritmo de ordenacion burbuja, poco eficiente pero util en arrays pequeños
+ * @author aleco
+ */
+public class Burbuja {
+    
+    /**
+     * 
+     * @param v
+     * @param i
+     * @param j 
+     */
     public static void swap(int[] v, int i, int j) {
         int aux = v[i];
         v[i] = v[j];

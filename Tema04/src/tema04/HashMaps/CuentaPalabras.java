@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class CuentaPalabras {
-    private static final String RutaWindows ="D:\\Proyectos\\PRO\\ProgramacionANT\\src\\Tema04\\DatosEjercicios\\Tema04-HashMap.E01.txt";
+    private static final String RutaWindows ="D:\\Proyectos\\PRO\\Tema04\\src\\tema04\\DatosEjercicios\\Tema04-HashMap.E01.txt";
+    private static final String RutaLinux ="/media/daw/Vbox&others/Proyectos/PRO/Tema04/src/tema04/DatosEjercicios/Tema04-HashMap.E01.txt";
     
     /**
      * Cuenta en un hashmap las palabras
@@ -15,7 +16,7 @@ public class CuentaPalabras {
      */
     public static HashMap<String,Integer> Contar() throws FileNotFoundException {
         HashMap<String,Integer> palabras = new HashMap<>();
-        File archivo = new File(RutaWindows);
+        File archivo = new File(RutaLinux);
         Scanner scanner = new Scanner(archivo);
         String linea = scanner.nextLine();
         while(!linea.equals("-1")) {    // Pasar por cada linea
@@ -34,21 +35,13 @@ public class CuentaPalabras {
     }
     
     /**
-     * Genera un informe con las palabras contadas de mayor a menor
-     * @param palabras 
-     */
-    public static void generarInforme(HashMap<String,Integer> palabras) {
-        
-    }
-    
-    /**
      * Main para pruebas
      * @param args
      * @throws FileNotFoundException 
      */
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException { // Lo de ordenarlo dijo que no
         HashMap<String,Integer> a = Contar();
-        //generarInforme(a);
+        System.out.println(a);
 
 
     }
