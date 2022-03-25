@@ -10,18 +10,18 @@ printf("El valor es %d.\n", contador);
 
 <div align="justify">
     El símbolo “%” denota el comienzo de la marca de formato. La marca “%d” se reemplaza por el valor de la variable contador y se imprime la cadena resultante. El símbolo “\n” representa un salto de línea. La salida, por defecto, se justifica a la derecha del ancho total que le hallamos dado al campo, que por defecto tiene como longitud la longitud de la cadena.
-<br><br>
-Si en la cadena de formato aparecen varias marcas, los valores a incluir se toman en el mismo orden en el que aparecen. La siguiente figura muestra un ejemplo en el que la cadena de formato tiene tres marcas, %s, %d y %5.2f, que se procesan utilizando respectivamente la cadena “red”, el entero 1234567 y el número real 3.14.
-<br>
-<br>
-<img src="input_output_printf_example_es.png" alt="Imagen de printf">
-<br>
-<br>
+    <br><br>
+    Si en la cadena de formato aparecen varias marcas, los valores a incluir se toman en el mismo orden en el que aparecen. La siguiente figura muestra un ejemplo en el que la cadena de formato tiene tres marcas, %s, %d y %5.2f, que se procesan utilizando respectivamente la cadena “red”, el entero 1234567 y el número real 3.14.
+    <br>
+    <br>
+    <img src="input_output_printf_example_es.png" alt="Imagen de printf" align="center">
+    <br>
+    <br>
 
-No se comprueba que el número de marcas en la cadena de formato y el número de parámetros restantes sea consistente. En caso de error, el comportamiento de printf es indeterminado.
+    No se comprueba que el número de marcas en la cadena de formato y el número de parámetros restantes sea consistente. En caso de error, el comportamiento de printf es indeterminado.
 
-Las marcas en la cadena de formato deben tener la siguiente estructura (los campos entre corchetes son optativos):
-<br>
+    Las marcas en la cadena de formato deben tener la siguiente estructura (los campos entre corchetes son optativos):
+    <br>
 </div>
 
 ```
@@ -75,9 +75,7 @@ Las marcas en la cadena de formato deben tener la siguiente estructura (los camp
 | %g, %G | Conversion a coma flotante, usando la notacion que requiera menor espacio |
 | %o | Conversion octal sin signo de un entero |
 | %u | Conversion decimal sin signo de un entero |
-| %s | Cadena de caracteres (terminada en '\0') | 
+| %s | Cadena de caracteres (terminada en '\0') |
 | %% | Imprime el simbolo % |
 
 #### Acuerdate de poner ``` \n ``` al final de la cadena para que lo imprima con salto de linea
-
-
