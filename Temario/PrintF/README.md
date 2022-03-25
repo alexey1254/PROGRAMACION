@@ -83,3 +83,7 @@ printf("El valor es %d.\n", contador);
 | %% | Imprime el simbolo % |
 
 #### Acuerdate de poner ``` \n ``` al final de la cadena para que lo imprima con salto de linea
+
+[Fuente](http://www.it.uc3m.es/pbasanta/asng/course_notes/input_output_printf_es.html)
+
+##### Licencia [Creative commons](https://creativecommons.org/licenses/by-nc-sa/3.0/es/)
