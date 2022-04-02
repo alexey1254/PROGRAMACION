@@ -40,6 +40,7 @@ public class FabricaCoches {
             ventas[modelo][centro]++;
             linea = fDatos.nextLine(); // Leer la siguiente linea del fichero
         }
+        fDatos.close();
     }
     
     /**
