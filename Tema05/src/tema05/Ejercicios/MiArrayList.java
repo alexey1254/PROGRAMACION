@@ -156,7 +156,9 @@ public class MiArrayList {
 
     public MiArrayList sort() {
         MiArrayList ordenado = new MiArrayList(this.maxCapacity);
-        // ! Implementa bien el metodo
+        for (int i = 0; i < this.numElementos; i++) {
+
+        }
 
         return ordenado;
     }
