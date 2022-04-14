@@ -1,5 +1,5 @@
 
-package tema05.Ejercicios;
+package tema05.Ejercicios.EjerciciosClase;
 
 /**
  *

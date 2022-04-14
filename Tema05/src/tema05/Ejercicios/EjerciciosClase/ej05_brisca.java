@@ -1,4 +1,4 @@
-package tema05.Ejercicios;
+package tema05.Ejercicios.EjerciciosClase;
 
 public class ej05_brisca extends Carta { // ! Añade un metodo para ver los puntos
     public ej05_brisca(String palo, byte numero) {

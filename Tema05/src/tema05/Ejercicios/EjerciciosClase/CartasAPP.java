@@ -1,4 +1,4 @@
-package tema05.Ejercicios;
+package tema05.Ejercicios.EjerciciosClase;
 
 public class CartasAPP {
     public static boolean CartaRepetida(Carta[] lista, Carta c, int limite) {

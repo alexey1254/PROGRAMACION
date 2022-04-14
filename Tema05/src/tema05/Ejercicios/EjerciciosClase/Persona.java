@@ -1,4 +1,4 @@
-package tema05;
+package tema05.Ejercicios.EjerciciosClase;
 
 public class Persona implements Cloneable {
 	private String nombre, apellidos;
