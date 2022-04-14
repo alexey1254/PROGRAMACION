@@ -1,4 +1,4 @@
-package tema05.Ejercicios;
+package tema05.Ejercicios.EjerciciosClase;
 
 public class Carta { // 0 1 2 3
     protected static String palos[] = { "Bastos", "Copas", "Espadas", "Oros" };

@@ -41,6 +41,5 @@ public class VentaMercancia {
         VentaMercancia v = new VentaMercancia();
         v.implementarProductos();
         v.datosCompraCliente();
-
     }
 }
