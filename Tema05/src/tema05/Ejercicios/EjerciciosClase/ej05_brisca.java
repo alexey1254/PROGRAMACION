@@ -1,5 +1,8 @@
 package tema05.Ejercicios.EjerciciosClase;
 
+import tema05.Ejercicios.ejercicio05.Carta;
+import tema05.Ejercicios.ejercicio05.CartasAPP;
+
 public class ej05_brisca extends Carta { // ! Añade un metodo para ver los puntos
     public ej05_brisca(String palo, byte numero) {
         super(palo, numero);
