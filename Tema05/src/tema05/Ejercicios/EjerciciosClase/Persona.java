@@ -26,10 +26,10 @@ public class Persona implements Cloneable {
 		nombre=nom; 
 	}
 
-	@Override
-	public boolean equals(Object p) {
-		return this.nombre.equals( ((Persona) p).nombre) && this.edad== ((Persona)p).edad)); 
-	}
+        /*@Override
+        public boolean equals(Object p) {
+        return ((Persona)p).edad == this.edad && this.nombre.equals( ((Persona) p).nombre)));
+        }*/
 	
 	
 	@Override

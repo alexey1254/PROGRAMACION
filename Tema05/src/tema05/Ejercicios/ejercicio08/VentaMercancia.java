@@ -27,6 +27,11 @@ public class VentaMercancia {
         leerDatos.close();
     }
 
+    /**
+     * Lee los datos de la compra del cliente desde un archivo de texto externo
+     * 
+     * @throws FileNotFoundException
+     */
     public void datosCompraCliente() throws FileNotFoundException {
         File archivo = new File(rutaCompraCliente);
         Scanner leerDatos = new Scanner(archivo);

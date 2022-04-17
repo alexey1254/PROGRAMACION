@@ -77,9 +77,9 @@ public class Duracion {
      * @throws Exception
      * ! Hay que corregir el metodo!!
      */
-    public Duracion suma(Duracion d) throws Exception {
-        return new Duracion(this.resta(-d.seg()));
-    }
+    /*public Duracion suma(Duracion d) throws Exception {
+    return 
+    }*/
 
     /**
      * Se suma con los segundos pasados
@@ -87,16 +87,16 @@ public class Duracion {
      * @return La suma del objeto sumandole los segundos
      * @throws Exception
      */
-    public Duracion suma(int seg) throws Exception {
-        return this.suma(Duracion.horasMin(segundos));
-    }
+    /*public Duracion suma(int seg) throws Exception {
+    return this.suma(Duracion.horasMin(segundos));
+    }*/
 
     /**
      * ToString
      */
     @Override
     public String toString() {
-        return String.format("%02d:%02d:%02d", ths.horas, this.minutos, this.segundos);
+        return String.format("%02d:%02d:%02d", this.horas, this.minutos, this.segundos);
     }
 
     @Override
