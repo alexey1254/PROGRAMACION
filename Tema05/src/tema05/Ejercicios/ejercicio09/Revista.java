@@ -1,4 +1,4 @@
-package tema05.Ejercicios.ejercicio10;
+package tema05.Ejercicios.ejercicio09;
 
 public class Revista {
     private String issn;
