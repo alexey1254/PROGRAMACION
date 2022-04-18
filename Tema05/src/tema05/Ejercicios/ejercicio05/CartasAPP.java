@@ -6,7 +6,16 @@ public class CartasAPP extends Carta {
     protected ArrayList<Carta> carta = new ArrayList<Carta>();
     protected int puntos;
 
-    public void cartasAleatorias() {
+    public CartasAPP() {
+        cartasAleatorias();
+        addPuntos();
+    }
+
+    /**
+     * CartasAPP
+     * Crea un arraylist con las cartas aleatorias
+     */
+    protected void cartasAleatorias() {
         Carta cartaAuxiliar = new Carta();
         carta.add(cartaAuxiliar);
 
@@ -24,7 +33,12 @@ public class CartasAPP extends Carta {
         return this.carta;
     }
 
-    public void addPuntos() {
+    /**
+     * CartasAPP
+     * Inicializa los puntos de las cartas, siendo estos los correspondientes a cada
+     * carta y los cuenta todos.
+     */
+    protected void addPuntos() {
         for (Carta cartaAleatoria : this.carta) {
             String cartaStr = "" + cartaAleatoria;
 
@@ -42,14 +56,12 @@ public class CartasAPP extends Carta {
         }
     }
 
+    /**
+     * CartasAPP
+     * 
+     * @return Puntos totales de la partida
+     */
     public int getPuntos() {
         return this.puntos;
-    }
-
-    public static void main(String args[]) {
-        CartasAPP a = new CartasAPP();
-        a.cartasAleatorias();
-        a.addPuntos();
-        System.out.printf("La puntuacion total es de: %d puntos.", a.getPuntos());
     }
 }
