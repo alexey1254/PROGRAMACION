@@ -1,5 +1,7 @@
 package tema05.Ejercicios.ejercicio05;
 
+
+
 public class Carta {
     private static String[] numeros = { "as", "dos", "tres", "cuatro", "cinco", "seis", "siete", "sota", "caballo",
             "rey" };
@@ -34,6 +36,11 @@ public class Carta {
         return paloCarta;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        Carta c = (Carta)obj;
+        return this.numeroCarta == c.numeroCarta && this.paloCarta == c.paloCarta;
+    }
     /**
      * Carta
      * ToString

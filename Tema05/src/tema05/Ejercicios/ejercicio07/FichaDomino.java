@@ -35,15 +35,7 @@ public class FichaDomino {
 
     @Override
     public String toString() {
-        if (this.ficha[0] == 0 && this.ficha[1] == 0) {
-            return "[  |  ]";
-        } else if (this.ficha[0] == 0) {
-            return String.format("[  | %s ]", this.ficha[1]);
-        } else if (this.ficha[1] == 0) {
-            return String.format("[ %s |  ]", this.ficha[0]);
-        } else {
-            return String.format("[ %s | %s ]", this.ficha[0], this.ficha[1]);
-        }
+        return String.format("[ %d | %d ]", this.ficha[0],this.ficha[1]).replace("0"," ");
     }
 
     public static void main(String[] args) {
